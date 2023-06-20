@@ -13,3 +13,4 @@ This repository contains a basic wiki for the popular TV series "Rick and Morty.
 - Retrofit: A popular HTTP client library for Android used to interact with the TVmaze API.
 - RecyclerView: A flexible view for displaying a scrollable list of items, allowing efficient recycling of views and smooth scrolling.
 - Picasso: A powerful image loading and caching library for Android, used to load and display episode images from the provided URLs.
+- ViewBinding: A feature in Android that allows you to more easily write code that interacts with views.
