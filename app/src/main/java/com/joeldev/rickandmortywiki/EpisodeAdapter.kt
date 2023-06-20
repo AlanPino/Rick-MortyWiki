@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class EpisodeAdapter(var episodeList: List<Episode> = emptyList()) :
+class EpisodeAdapter(var episodeList: List<Episode> = emptyList(), private val onEpisodeSelected: (Episode) -> Unit) :
     RecyclerView.Adapter<EpisodeViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EpisodeViewHolder {
@@ -16,5 +16,9 @@ class EpisodeAdapter(var episodeList: List<Episode> = emptyList()) :
 
     override fun onBindViewHolder(holder: EpisodeViewHolder, position: Int) {
         holder.bind(episodeList[position])
+
+        holder.itemView.setOnClickListener(){
+            onEpisodeSelected(episodeList[position])
+        }
     }
 }

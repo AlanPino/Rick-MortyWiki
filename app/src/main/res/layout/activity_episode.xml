@@ -109,24 +109,5 @@
         app:layout_constraintTop_toBottomOf="@id/episode_number"
         tools:text="Rick, un excéntrico científico con problemas con la bebida, vivirá extrañas aventuras con su nieto Morty en esta serie basada en Regreso al futuro." />
 
-    <TextView
-        android:id="@+id/characters"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="characters"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/episode_description" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/characters" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

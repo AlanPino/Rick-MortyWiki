@@ -2,6 +2,7 @@ package com.joeldev.rickandmortywiki
 
 import com.google.gson.annotations.SerializedName
 
+
 data class Episode(
     @SerializedName("name") val name: String,
     @SerializedName("number") val number: Int,
